@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+</head>
+<body>
+    {% if message=="Неправильный пароль или логин" %}
+        <p><font color = #fa8e47>{{ message }}</font> </p>	
+	{% elif message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    
+    <form action="" method="post">
+        <p>
+	    <label for="username">Логин</label>
+	    <input type="text" name="username">
+	</p>
+	<p>
+	    <label for="password">Пароль</label>
+	    <input type="password" name="password">
+	</p>
+	<p>
+	    <input type="submit value = "Войти">
+	</p>
+    </form>
+    
+</body>
+</html>
